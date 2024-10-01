@@ -1,7 +1,4 @@
 
-
-
-
 import random
 
 def get_valid_number():
@@ -26,6 +23,7 @@ def main():
     while True:
       bottom_of_range, top_of_range = get_valid_number()
       random_number = random.randint(bottom_of_range, top_of_range)
+      # I've completely forgotten that I created a block of code with this structure. I'm pretty amazed right now
       guesses = 0
 
       while True:
@@ -42,3 +40,4 @@ def main():
       print(f"Congratulations you got it in " + str(guesses) + " guesses")
 
 main()
+print("I hope this works now")
